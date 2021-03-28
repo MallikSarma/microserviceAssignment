@@ -1,6 +1,7 @@
 package com.telstra.telstrastockservice.resources;
 
 import com.telstra.telstrastockservice.model.StockDetails;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,7 @@ import yahoofinance.YahooFinance;
 @RequestMapping("/stock")
 public class StockService {
 
-    @GetMapping("/{stockCode}")
+    @GetMapping(value = "/{stockCode}", produces = MediaType.APPLICATION_JSON_VALUE)
     public StockDetails getStockDetails(@PathVariable("stockCode")  String stockCode)  {
         Stock stock = null;
     try {
