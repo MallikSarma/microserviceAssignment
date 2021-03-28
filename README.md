@@ -13,5 +13,5 @@ response json is {"country":"IND","city":"HYDERABAD","zipCode":"500082","tempera
 access url : http://localhost:8082/stock/TLS.AX
 {"name":"Telstra Corporation Limited","price":3.41,"change":0.08,"currency":"AUD","bid":3.4}
 
-Implemented using Netflix Service Discovery, Circuit Breaker patterns.
+Implemented using Netflix Service Discovery, Circuit Breaker patterns. 
 
