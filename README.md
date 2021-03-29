@@ -5,11 +5,11 @@ access url : http://localhost:8081/Telstra/homePage/500082
 response json is {"stockDetails":{"name":"Telstra Corporation Limited","price":3.41,"change":0.08,"currency":"AUD","bid":3.4},
 "weatherSummary":{"country":"IND","city":"HYDERABAD","zipCode":"500082","temperature":"28°C","wind":"10","humidity":"86","precipitation":"2%"}}
 
- 2) Stock Service (using Yahoo Finance API)
+ 2) Weather Service (using Mock Data)
 access url : http://localhost:8083/weather/500082
 response json is {"country":"IND","city":"HYDERABAD","zipCode":"500082","temperature":"28°C","wind":"10","precipitation":"2%","humidity":"86"}
 
-3) Weather Service (using Mock Data)
+3) Stock Service (using Yahoo Finance API)
 access url : http://localhost:8082/stock/TLS.AX
 {"name":"Telstra Corporation Limited","price":3.41,"change":0.08,"currency":"AUD","bid":3.4}
 
